@@ -28,11 +28,27 @@ Hardware requirements
 .. image:: https://github.com/TheProrok29/rpi-fan/blob/master/circuit_scheme.jpg
 
 
-Author
-========
+Instalation
+============
 
-- **Tomasz Bogacki** - `github <https://github.com/TheProrok29/>`_
+It's possible to run script directly but also you can add this file to system autostart e.g using crontab:
 
+.. code-block:: bash
+
+    $ git clone git@github.com:TheProrok29/rpi-fan.git
+    $ cd rpi-fan
+    $ sudo pip3 install -r requirements.txt
+    $ sudo cp scripts/fan.py /usr/local/bin
+    $ sudo chmod +x /usr/local/bin/fan.py
+    $ sudo cp scripts/launcher.sh /usr/local/bin
+    $ sudo chmod +x /usr/local/bin/launcher.sh
+    $ sudo crontab -e
+
+Now, enter the line:
+
+.. code-block:: bash
+
+    $ @reboot sh /usr/local/bin/launcher.sh
 
 License
 =============
