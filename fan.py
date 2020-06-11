@@ -23,7 +23,7 @@ def get_temp() -> float:
 if __name__ == '__main__':
 
     if OFF_TEMP >= ON_TEMP:
-        raise RuntimeError('OFF_THRESHOLD must be less than ON_THRESHOLD')
+        raise RuntimeError('OFF_TEMP must be less than ON_TEMP')
 
     while True:
         temp = get_temp()
