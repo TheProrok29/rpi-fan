@@ -2,7 +2,7 @@
 RPI Fan Control
 ===============
 
-Raspberry Pi fan controller is Python script to start and stop  5V fan depends on RPI cpu temperature.
+RPI Fan Control is Python script to start and stop 5V fan depends on RPI cpu temperature.
 
 
 Description
